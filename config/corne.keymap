@@ -18,7 +18,7 @@
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
-#define AJUST 3
+#define ADJUST 3
 
 
 / {
@@ -82,14 +82,14 @@
                 adjust_layer {
                         label = "Adjust";
 // -----------------------------------------------------------------------------------------
-// | BT CLR | BT 0  | BT 1   | BT 2 | BT 3 | BT 4  |   | RGB TOG | RGB BRD | RGB BRI |     |     |      |
-// |        |       |        |      |      |       |   | RGB EFR | RGB SAD | RGB SAI |     |     |      |
-// | EP OFF | EP ON | EP TOG |      |      | RESET |   | RGB EFF | RGB HUD | RGB HUI |     |     |      |
-//                           | GUI  |      | SPC   |   | ENT     |         | ALT     |
+// | BT CLR | BT 0  | BT 1   | BT 2 | BT 3 | BT 4 |   | RGB TOG | RGB BRD | RGB BRI |     |     |      |
+// |        |       |        |      |      |      |   | RGB EFR | RGB SAD | RGB SAI |     |     |      |
+// | EP OFF | EP ON | EP TOG |      |      |      |   | RGB EFF | RGB HUD | RGB HUI |     |     |      |
+//                           | GUI  |      | SPC  |   | ENT     |         | ALT     |
                         bindings = <
    &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans  &trans  &trans
    &trans             &trans            &trans             &trans        &trans        &trans          &rgb_ug RGB_EFR  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans  &trans
-   &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG  &trans        &trans        &reset          &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans  &trans  &trans
+   &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG  &trans        &trans        &trans          &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans  &trans  &trans
                                                                   &kp LGUI  &trans  &kp SPACE          &kp RET  &trans  &kp RALT
                         >;
                 };
