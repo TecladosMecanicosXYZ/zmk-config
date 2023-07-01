@@ -14,6 +14,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #endif // CONFIG_ZMK_RGB_UNDERGLOW
 
+&led_strip { chain-length = <27>; };
+
 / {
         keymap {
                 compatible = "zmk,keymap";
